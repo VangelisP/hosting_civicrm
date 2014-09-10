@@ -25,7 +25,7 @@ function hosting_civicrm_form_site_node_form_alter(&$form, &$form_state) {
   _hosting_site_field($form, $node, 'civicrm_version', array(
     // This field is read-only
     '#type' => 'hidden',
-    '#required' => TRUE,
+    '#required' => FALSE,
     '#default_value' => $form['#node']->civicrm_version ? $form['#node']->civicrm_version : hosting_civicrm_get_version(),
   ));
 
